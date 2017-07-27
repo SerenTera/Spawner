@@ -38,8 +38,9 @@ Type in /proxy chat without '!' for commands, or with '!' prefix in other chats.
 * Added !sound
 
 ## Personal Changes
-* Use commands module to handle
+* Use commands module to handle chat commands
 * Combine chat function handlers to command itself
 * Add possibility to add custom name to user spawn
-* developer mode to log things in console
+* developer mode to log things in console (change in defaults in index.js)
+* userdata toggle that display other player costume and features (change default in index.js)
 * other minor changes
