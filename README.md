@@ -4,10 +4,10 @@ Ever wanted to spawn an army of popori? Well now you can with this incredibly po
 ## Commands
 Requires commands module by Pinkie Pie
 
-Type in /proxy chat without '!' for commands. Separate arguments with a space (eg: /proxy snpc 1001 1201 102211)
+Type in /proxy chat without '!' for commands, or with '!' prefix in other chats. Separate arguments with a space (eg: /proxy snpc 1001 1201 102211)
 
 * `SNPC <TemplateId> <HuntingZone> <SpawnScript>` Spawns in an NPC. Spawnscript refers to ActionScripts - Will crash you if you spawn an invalid NPC.
-* `SU <Model> <Face> <Hair> <Mount> <hairitem> <maskitem> <backitem> <costume> <weaponSkin> <WeaponEnchant>` Spawns a player. Face and hair values can be found spammed in the console from other players(Currently I have no idea how the data is set out). Player relation and name can be changed in the script currently.
+* `SU <Model> <Face> <Hair> <Mount> <hairitem> <maskitem> <backitem> <costume> <weaponSkin> <WeaponEnchant> <customname>` Spawns a player. Face and hair values can be found spammed in the console from other players(Currently I have no idea how the data is set out). Player relation and name can be changed in the script currently. Name will default to 'Spacecats' if not inputted and left blank as the 11th argument (<customname>).
 * `SC <ID>` Spawns a "collection"/collecatable item
 * `SHUT <ID>` Spawns a shuttle/elevator.
 * `SOUND <ID>` Plays a sound
@@ -36,3 +36,10 @@ Type in /proxy chat without '!' for commands. Separate arguments with a space (e
 
 ## Updates
 * Added !sound
+
+## Personal Changes
+* Use commands module to handle
+* Combine chat function handlers to command itself
+* Add possibility to add custom name to user spawn
+* developer mode to log things in console
+* other minor changes
