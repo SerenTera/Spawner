@@ -2,15 +2,19 @@
 Ever wanted to spawn an army of popori? Well now you can with this incredibly poorly coded trainwreck!
 
 ## Commands
-* `!SNPC <TemplateId> <HuntingZone> <SpawnScript>` Spawns in an NPC. Spawnscript refers to ActionScripts - Will crash you if you spawn an invalid NPC.
-* `!SU <Model> <Face> <Hair> <Mount> <hairitem> <maskitem> <backitem> <costume> <weaponSkin> <WeaponEnchant>` Spawns a player. Face and hair values can be found spammed in the console from other players(Currently I have no idea how the data is set out). Player relation and name can be changed in the script currently.
-* `!SC <ID>` Spawns a "collection"/collecatable item
+Requires commands module by Pinkie Pie
+
+Type in /proxy chat without '!' for commands. Separate arguments with a space (eg: /proxy snpc 1001 1201 102211)
+
+* `SNPC <TemplateId> <HuntingZone> <SpawnScript>` Spawns in an NPC. Spawnscript refers to ActionScripts - Will crash you if you spawn an invalid NPC.
+* `SU <Model> <Face> <Hair> <Mount> <hairitem> <maskitem> <backitem> <costume> <weaponSkin> <WeaponEnchant>` Spawns a player. Face and hair values can be found spammed in the console from other players(Currently I have no idea how the data is set out). Player relation and name can be changed in the script currently.
+* `SC <ID>` Spawns a "collection"/collecatable item
 * `SHUT <ID>` Spawns a shuttle/elevator.
-* `!SOUND <ID>` Plays a sound
-* `!OBJ <ID>` Spawns a "Work object" IDs can be found <here>. Far less cool than it sounds.
-* `!RM<OBJ/NPC/U/SHUT/COL>` Despawns the last thing spawned. EG. !RMU will delete the last user spawned in with !su
-* `!SCRIPT<ME/USER/NPC>` Applys an actionscript to the last thing spawned or yourself. Can lock your character in place or teleport you client side, requiring a restart to fix.
-* `!RELOAD` Sends S_SPAWN_ME to fix camera/other issues.
+* `SOUND <ID>` Plays a sound
+* `OBJ <ID>` Spawns a "Work object" IDs can be found <here>. Far less cool than it sounds.
+* `RM<OBJ/NPC/U/SHUT/COL>` Despawns the last thing spawned. EG. !RMU will delete the last user spawned in with !su
+* `SCRIPT<ME/USER/NPC>` Applys an actionscript to the last thing spawned or yourself. Can lock your character in place or teleport you client side, requiring a restart to fix.
+* `RELOAD` Sends S_SPAWN_ME to fix camera/other issues.
 
 ## IDs
 * Collection, NPC, Shuttle, Object and character model IDs can be found [Here](https://docs.google.com/spreadsheets/d/1Inba-tW70grzqisvpdFPpKFfgz5XTptFygjUNb1T1hw/edit?usp=sharing). ActionScripts [Here](https://drive.google.com/file/d/0B9CbzlVpo0LuTjVWZ19Lel8wVjQ/view?usp=sharing) - Now also in main sheet in more readable format. Costume/etc ids can be found [Here](http://teradatabase.net/)
