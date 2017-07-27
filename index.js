@@ -1,7 +1,8 @@
 const Command = require('command')
 
-let developer=true //developer mode: display console messages on used cids and location co-ord of spawn
-
+let developer=false, //developer mode: display console messages on used cids and location co-ord of spawn
+	userdata=true  //Display all user costume and features data (default true in original)
+	
 module.exports = function Memelord420(dispatch) {
 	
 	const {protocol} = require('tera-data-parser'), // ???
@@ -55,10 +56,10 @@ module.exports = function Memelord420(dispatch) {
 	})
 	
 	dispatch.hook('S_SPAWN_USER', 5, event =>{
-		console.log('User Found '+event.name, event.appface, event.apphair)
+		if(userdata) console.log('User Found '+event.name, event.appface, event.apphair)
 		pc = event
 	})
-
+	
 	
 	//////////Commands
 	command.add('snpc', (args1,args2,args3) => {
